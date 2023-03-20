@@ -1,0 +1,57 @@
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 2vw;
+    justify-content: right;
+}
+.navWrapper{
+    padding: 0px 2vw;
+    font-family: "nunito", serif;
+    text-decoration: white;
+}
+.imageContainer{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    left: 18vw;
+    width:100%;
+}
+.titleText {
+    position: absolute;
+    top: 240px;
+    left: -15px;
+    margin: 0;
+}
+.largeText {
+    font-size: 3rem;
+    font-family: "nunito", serif;
+    font-weight: 700;
+    color:#3D48AE;
+}
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "PT Sans", serif;
+}
+.headerImage {
+    display:flex;
+    justify-content: center;
+}
+button{
+    font-family: "nunito", serif;
+    width: 8vw;
+    height: 4vh;
+    border-style: none;
+    color:white;
+    background-color: #FBAF01;
+}
+ul.navItems {
+    li {
+        text-decoration:none;
+        color: white;
+    }
+}
+a {
+    text-decoration: none;
+    color: white;
+}

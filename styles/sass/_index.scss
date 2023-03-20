@@ -1,0 +1,70 @@
+.aboutImg {
+    width: 100%;
+    height: auto;
+}
+.aboutMe{
+    background-color:black;
+    padding: 1%;
+    padding-right: 3%;
+}
+.aboutMeText {
+    margin-bottom: 0;
+    color: #3D48AE;
+}
+.introText {
+    font-family: "PT Sans", serif;
+    color: white;
+}
+.skillsWrapper {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #3D48AE;
+}
+.skillsList {
+    li {
+        margin-bottom: 20%;
+    }
+}
+.skillsText {
+    font-size: 50px;
+}
+.skillsSummary {
+    margin-top: -30px;
+}
+.projectTitle {
+    padding-left: 13%;
+    font-size: 3rem;
+}
+.projectPic{
+    width:20%;
+    height: auto;
+}
+.projectList{
+    display:flex;
+    justify-content: center;
+    gap: 8%;
+    padding: 1%;
+}
+.projectHeader{
+    font-size: 1.5rem;
+}
+.projectSkills{
+    color:#3D48AE;
+    font-size: 0.8rem;
+}
+.delicious {
+    position: relative;
+    left: 1.1vw;
+}
+div.projectInfo {
+    p, button{
+        position: relative;
+        left: 1.1vw;
+    }
+}
+.contacts {
+    padding-left:14%;
+}

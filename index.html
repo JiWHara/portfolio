@@ -5,12 +5,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=PT+Sans:wght@400;700&display=swap"  rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Portfolio under construction</h1>
-        <p>testing new link</p>
+        <div class="navWrapper wrapper">
+            <h1>jwh.</h1>
+            <nav id="home">
+                <ul class="navItems">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#aboutMe">about</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li>
+                        <button class="contactButton">
+                            <a href="#contact">get in touch</a>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+            <div class="imageContainer">
+                <img src="./assets/header.png" class="headerImage" alt="guy on a laptop coding illustration">
+                <h2 class="titleText">
+                    <span class="largeText">jigme wangchuk hara</span><br><span class="title">front-end web developer</span>
+                </h2>
+            </div>        
     </header>
-    
+    <main>
+        <section>
+            <div class="aboutMe wrapper">
+                <div>
+                    <img src="./assets/aboutMe.png" class="aboutImg" alt="guy holding a file folder illustration">
+                </div>
+                <div>
+                    <h2 class="largeText aboutMeText" id="aboutMe">
+                        about me
+                    </h2>
+                    <h3 class="introText">
+                        Welcome to my profile! I'm Jigme and I am a Front-End Web Developer currently studying at Juno College. I use HTML, CSS, Javascript, and React.js to create functional and fully accessible/responsive websites.<br> I have a deep passion for design and working with others to make that design a reality is my goal. I even have a life project in the works as a result for my attachment to design. Additionally, I've been in various different fields such as teaching, life sciences, and even volunteering to help marginalized adults living in Toronto.<br> Besides coding, I have interests in karaoke, creating stories, and making new friends!
+                    </h3>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="skillsWrapper" id="skills">
+                <div class="skillsSummary">
+                    <h2 class="skillsText">skills</h2>
+                    <h3>Here are some of <br>the skills that I<br> have picked up so<br> far in web development!</h3>
+                </div>
+                <div>
+                    <ul class="skillsList">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Sass</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="skillsList">
+                        <li>React</li>
+                        <li>Firebase</li>
+                        <li>Git and Github</li>
+                        <li>Netlify</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="skillsList">
+                        <li>APIs with AJAX</li>
+                        <li>Web accessibility</li>
+                        <li>Paired Programming</li>
+                        <li>Project Management</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="projectTitle" id="projects">projects</h2>    
+            <div class="projectList">
+                <img class="projectPic" src="./assets/hotdogbot.png" alt="hotdog chat bot project screenshot">
+                <div>
+                    <p><span class="projectHeader">Hotdog Bot</span><br><span class="projectSkills">HTML, CSS, JAVASCRIPT, FIREBASE</span><br>Hotdog bot is a simple chatbot that relies <br> on firebase to store user inputs for future use.<br>
+                    </p>
+                    <button><a href="https://hotdogbot.netlify.app/">view live</a></button>
+                    <button><a href="https://github.com/JiWHara/project2">view code</a></button>
+                </div>
+            </div>
+            <div class="projectList">
+                <img class="projectPic delicious" src="./assets/delicious.png" alt="delicious design recreation project screenshot">
+                <div class="projectInfo">
+                    <p><span class="projectHeader">Delicious</span><br><span class="projectSkills">HTML, CSS,</span><br>Delicious is a project to test HTML and CSS skills <br> by creating a website from a simple design mockup.<br>
+                    </p>
+                    <button><a href="https://devjigmeprojectone.netlify.app/">view live</a></button>
+                    <button><a href="https://github.com/JiWHara/project-1-48">view code</a></button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="projectTitle" id="contacts">contacts</h2>
+            <ul class="contacts">
+                <li><a href="https://github.com/JiWHara">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/jigmehara/">LinkedIn</a></li>
+            </ul>
+        </section>
+        <footer>
+            <p>Built in 2023 by Jigme Wangchuk Hara!</p>
+        </footer>
+    </main>
 </body>
 </html> 
