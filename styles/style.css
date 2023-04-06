@@ -226,6 +226,17 @@ html {
   overflow: hidden;
 }
 
+.contactWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: black;
+}
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -288,20 +299,67 @@ nav ul {
 button {
   font-family: "nunito", serif;
   width: 8vw;
-  height: 4vh;
+  height: 5vh;
   border-style: none;
   color: white;
   background-color: #FBAF01;
 }
 
+.contactButton {
+  padding-top: -2vh;
+}
+
 ul.navItems li {
   text-decoration: none;
   color: white;
+  padding-top: 2vh;
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+.typing {
+  width: 22ch;
+  -webkit-animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+          animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 2rem;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.typingFooter {
+  width: 40ch;
+  -webkit-animation: typing 2s steps(40), blink 0.5s step-end infinite alternate;
+          animation: typing 2s steps(40), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 1rem;
+  padding-top: 1.5vh;
 }
 
 .aboutImg {
@@ -345,12 +403,12 @@ a {
   margin-bottom: 20%;
 }
 
-.skillsText {
-  font-size: 50px;
-}
-
 .skillsSummary {
   margin-top: -30px;
+}
+
+.projectWrapper {
+  padding-bottom: 5%;
 }
 
 .projectTitle {
@@ -397,6 +455,141 @@ div.projectInfo p, div.projectInfo button {
   padding-left: 14%;
 }
 
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* formspree styles */
+/* reset */
+form input,
+form select,
+form textarea,
+form fieldset,
+form optgroup,
+form label,
+.StripeElement {
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+form label,
+form legend {
+  font-size: 0.825rem;
+  margin-bottom: 0.5rem;
+}
+
+/* border, padding, margin, width */
+form input,
+form select,
+form textarea,
+.StripeElement {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.75em 1rem;
+  margin-bottom: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus,
+.StripeElement:focus {
+  background-color: white;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: gray;
+  outline-offset: -1px;
+}
+
+form [type=text],
+form [type=email],
+.StripeElement {
+  width: 40%;
+}
+
+form [type=button],
+form [type=submit],
+form [type=reset] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+
+form [type=button]:focus,
+form [type=submit]:focus,
+form [type=reset]:focus {
+  outline: none;
+}
+
+form select {
+  text-transform: none;
+}
+
+form textarea {
+  width: 50%;
+}
+
+.submitBtn {
+  width: 10%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+img {
+  height: 0 auto;
+}
+
+form {
+  padding-left: 3.5%;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skillsText {
+  font-size: 3rem;
+}
+
+.skillsSummary {
+  padding-left: 2.5%;
+}
+
+.icon:hover {
+  font-size: 200%;
+}
+
 footer {
   background-color: black;
   height: 5vh;
@@ -410,7 +603,7 @@ footer {
 
 html {
   background-color: #1e2124;
-  max-width: 100%;
+  max-width: 100vw;
   text-decoration: none;
   overflow-x: hidden;
   color: white;
@@ -429,4 +622,89 @@ h1, h2, h3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+}
+
+.center {
+  justify-self: center;
+  position: relative;
+  left: 10vw;
+}
+
+#style-4::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgb(255, 255, 255);
+  background-color: #F5F5F5;
+}
+
+#style-4::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+#style-4::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border: 2px solid #555555;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+html {
+  font-size: 120%;
+}
+
+@media (min-width: 1250px) and (max-width: 1700px) {
+  .imageContainer {
+    position: relative;
+    display: block;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .headerImage {
+    width: clamp(300px, 55vw, 1000px);
+    height: 0 auto;
+    padding-left: 15vw;
+  }
+  .titleText {
+    left: -5vw;
+    top: 15vh;
+  }
+  h2 .titleText {
+    font-size: 80%;
+  }
+  button {
+    height: 120%;
+  }
+}
+@media (min-width: 700px) and (max-width: 1250px) {
+  .imageContainer {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .headerImage {
+    width: 90%;
+    height: 0 auto;
+  }
+  .titleText {
+    top: 0;
+  }
+  .largeText {
+    font-size: 160%;
+  }
+  .title {
+    font-size: 30%;
+  }
+  button {
+    height: 120%;
+    width: 120%;
+  }
 }

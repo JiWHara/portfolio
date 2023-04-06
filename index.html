@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jigme's Portfolio</title>
+    <title>// Jigme</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=PT+Sans:wght@400;700&display=swap"  rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
 </head>
+<div class="scrollbar" id="style-default">
 <body>
     <header>
         <div class="navWrapper wrapper">
@@ -21,7 +25,7 @@
                     <li><a href="#projects">projects</a></li>
                     <li>
                         <button class="contactButton">
-                            <a href="#contact">get in touch</a>
+                            <a href="#contacts">get in touch</a>
                         </button>
                     </li>
                 </ul>
@@ -30,7 +34,9 @@
             <div class="imageContainer">
                 <img src="./assets/header.png" class="headerImage" alt="guy on a laptop coding illustration">
                 <h2 class="titleText">
-                    <span class="largeText">jigme wangchuk hara</span><br><span class="title">front-end web developer</span>
+                    <span class="largeText">jigme wangchuk hara</span><br><span class="title"><div class="typing">
+                        front-end web developer.
+                      </div></span>
                 </h2>
             </div>        
     </header>
@@ -44,8 +50,8 @@
                     <h2 class="largeText aboutMeText" id="aboutMe">
                         about me
                     </h2>
-                    <h3 class="introText">
-                        Welcome to my profile! I'm Jigme and I am a Front-End Web Developer currently studying at Juno College. I use HTML, CSS, Javascript, and React.js to create functional and fully accessible/responsive websites.<br> I have a deep passion for design and working with others to make that design a reality is my goal. I even have a life project in the works as a result for my attachment to design. Additionally, I've been in various different fields such as teaching, life sciences, and even volunteering to help marginalized adults living in Toronto.<br> Besides coding, I have interests in karaoke, creating stories, and making new friends!
+                    <h3 class="introText" >
+                        Welcome to my portfolio! I'm Jigme and I am a Front-End Web Developer currently studying at Juno College. I use HTML, CSS, Javascript, and React.js to create functional and fully accessible/responsive websites.<br><br> I have a deep passion for design and working with others to make that design a reality is my goal. I even have a life project in the works as a result for my attachment to design. Additionally, I've been in various different fields such as teaching, life sciences, and even volunteering to help marginalized adults living in Toronto. Besides coding, I have interests in karaoke, creating stories, and making new friends!
                     </h3>
                 </div>
             </div>
@@ -58,31 +64,32 @@
                 </div>
                 <div>
                     <ul class="skillsList">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Sass</li>
-                        <li>Javascript</li>
+                        <li><i class="devicon-html5-plain-wordmark icon"></i>&nbsp;HTML</li>
+                        <li><i class="devicon-css3-plain-wordmark icon"></i>&nbsp;CSS</li>
+                        <li><i class="devicon-sass-original icon"></i>&nbsp;Sass</li>
+                        <li><i class="devicon-javascript-plain icon"></i>&nbsp;Javascript</li>
                     </ul>
                 </div>
                 <div>
                     <ul class="skillsList">
-                        <li>React</li>
-                        <li>Firebase</li>
-                        <li>Git and Github</li>
-                        <li>Netlify</li>
+                        <li><i class="devicon-react-original-wordmark icon"></i>&nbsp;React</li>
+                        <li><i class="devicon-firebase-plain-wordmark icon"></i>&nbsp;Firebase</li>
+                        <li><i class="devicon-github-original-wordmark icon"></i>&nbsp;Git and Github</li>
+                        <li><span class="material-symbols-outlined icon">web</span>&nbsp;Netlify</li>
                     </ul>
                 </div>
                 <div>
                     <ul class="skillsList">
-                        <li>APIs with AJAX</li>
-                        <li>Web accessibility</li>
-                        <li>Paired Programming</li>
-                        <li>Project Management</li>
+                        <li><span class="material-symbols-outlined icon">api</span>&nbsp;APIs with AJAX</li>
+                        <li><span class="material-symbols-outlined icon">accessibility</span>&nbsp;Web accessibility</li>
+                        <li><span class="material-symbols-outlined icon">partner_exchange</span>&nbsp;Paired Programming</li>
+                        <li><span class="material-symbols-outlined icon">workspaces</span>&nbsp;Project Management</li>
                     </ul>
                 </div>
             </div>
         </section>
         <section>
+            <div class="projectWrapper">
             <h2 class="projectTitle" id="projects">projects</h2>    
             <div class="projectList">
                 <img class="projectPic" src="./assets/hotdogbot.png" alt="hotdog chat bot project screenshot">
@@ -96,23 +103,40 @@
             <div class="projectList">
                 <img class="projectPic delicious" src="./assets/delicious.png" alt="delicious design recreation project screenshot">
                 <div class="projectInfo">
-                    <p><span class="projectHeader">Delicious</span><br><span class="projectSkills">HTML, CSS,</span><br>Delicious is a project to test HTML and CSS skills <br> by creating a website from a simple design mockup.<br>
+                    <p><span class="projectHeader">Delicious</span><br><span class="projectSkills">HTML, CSS</span><br>Delicious is a project to test HTML and CSS skills <br> by creating a website from a simple design mockup.<br>
                     </p>
                     <button><a href="https://devjigmeprojectone.netlify.app/">view live</a></button>
                     <button><a href="https://github.com/JiWHara/project-1-48">view code</a></button>
                 </div>
             </div>
+        </div>
         </section>
         <section>
-            <h2 class="projectTitle" id="contacts">contacts</h2>
+            <div class="contactWrapper">
+            <h2 class="projectTitle" id="contacts">contact</h2>
+            <div class="center">
             <ul class="contacts">
-                <li><a href="https://github.com/JiWHara">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/jigmehara/">LinkedIn</a></li>
+            <!-- Formspree form -->
+                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mdovwvaw" method="post">
+                    <fieldset id="fs-frm-inputs">
+                      <label for="full-name" class="fillIn">Full Name</label>
+                      <input type="text" name="name" id="full-name" placeholder="First and Last" required="" class="fillIn">
+                      <label for="email-address">Email Address</label>
+                      <input type="email" name="_replyto" id="email-address" placeholder="Email" required="" class="fillIn">
+                      <label for="message">Message</label>
+                      <textarea rows="5" name="message" id="message" placeholder="Message" required=""></textarea>
+                      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" class="fillIn">
+                    </fieldset>
+                    <input type="submit" value="Submit" class="submitBtn">
+                  </form>
             </ul>
+            </div>
+        </div>
         </section>
         <footer>
-            <p>Built in 2023 by Jigme Wangchuk Hara!</p>
+            <p><div class="typingFooter">Built in 2023 by Jigme Wangchuk Hara!</div></p>
         </footer>
     </main>
 </body>
+</div>
 </html> 

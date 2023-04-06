@@ -40,18 +40,54 @@ nav ul{
 button{
     font-family: "nunito", serif;
     width: 8vw;
-    height: 4vh;
+    height: 5vh;
     border-style: none;
     color:white;
-    background-color: #FBAF01;
+    background-color: #FBAF01
+}
+.contactButton {
+    padding-top: -2vh;
 }
 ul.navItems {
     li {
         text-decoration:none;
         color: white;
+        padding-top: 2vh;
     }
 }
 a {
     text-decoration: none;
     color: white;
 }
+
+// styles for typing effect
+// https://codepen.io/denic/pen/GRoOxbM
+.typing {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 2rem;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  .typingFooter {
+    width: 40ch;
+    animation: typing 2s steps(40), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 1rem;
+    padding-top: 1.5vh;
+  }
