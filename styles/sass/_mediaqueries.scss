@@ -1,7 +1,9 @@
 
 
 @media (min-width: 1250px) and (max-width: 1700px){
-
+  html{
+    overflow-x: hidden;
+  }
     .imageContainer{
         position:relative;
         display:block;
@@ -29,6 +31,9 @@
       }
 }
 @media (min-width: 700px) and (max-width: 1250px){
+  html{
+    overflow-x: hidden;
+  }
   .imageContainer{
     position:relative;
     display:flex;
@@ -83,7 +88,7 @@ form {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    left: 20vw;
+    left: 10vw;
     width: 75%;
   }
   ul.navItems {
@@ -103,8 +108,8 @@ form {
   .headerImage{
     width: 120%;
     height: 0 auto;
-    right: -5vw;
-    padding-top: 40%;
+    right: 5vw;
+    padding-top: 15%;
   }
   .titleText {
    top: 0;
