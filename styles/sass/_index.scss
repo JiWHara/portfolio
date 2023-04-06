@@ -28,11 +28,12 @@
         margin-bottom: 20%;
     }
 }
-.skillsText {
-    font-size: 50px;
-}
+
 .skillsSummary {
     margin-top: -30px;
+}
+.projectWrapper {
+    padding-bottom: 5%;
 }
 .projectTitle {
     padding-left: 13%;
@@ -67,4 +68,108 @@ div.projectInfo {
 }
 .contacts {
     padding-left:14%;
+}
+form {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* formspree styles */
+/* reset */
+form input,
+form select,
+form textarea,
+form fieldset,
+form optgroup,
+form label,
+.StripeElement {
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+form label,
+form legend {
+  font-size: 0.825rem;
+  margin-bottom: 0.5rem;
+}
+/* border, padding, margin, width */
+form input,
+form select,
+form textarea,
+.StripeElement {
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.75em 1rem;
+  margin-bottom: 1.5rem;
+  display:flex;
+  justify-content: center;
+}
+form input:focus,
+form select:focus,
+form textarea:focus,
+.StripeElement:focus {
+  background-color: white;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: gray;
+  outline-offset: -1px;
+}
+form [type="text"],
+form [type="email"],
+.StripeElement {
+  width: 40%;
+}
+form [type="button"],
+form [type="submit"],
+form [type="reset"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+form [type="button"]:focus,
+form [type="submit"]:focus,
+form [type="reset"]:focus {
+  outline: none;
+}
+
+form select {
+  text-transform: none;
+}
+form textarea{
+    width: 50%
+}
+.submitBtn{
+    width: 10%;
+    color:rgba(0, 0, 0, 0.6);
+}
+img {
+    height: 0 auto;
+}
+form {
+    padding-left: 3.5%;
+}
+ul {
+    list-style: none;
+}
+li {
+    display:flex;
+}
+.skillsText {
+    font-size: 3rem;
+}
+.skillsSummary {
+    padding-left: 2.5%;
+}
+.icon:hover {
+    font-size: 200%;
 }
