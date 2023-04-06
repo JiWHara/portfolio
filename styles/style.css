@@ -653,6 +653,9 @@ html {
 }
 
 @media (min-width: 1250px) and (max-width: 1700px) {
+  html {
+    overflow-x: hidden;
+  }
   .imageContainer {
     position: relative;
     display: block;
@@ -678,6 +681,9 @@ html {
   }
 }
 @media (min-width: 700px) and (max-width: 1250px) {
+  html {
+    overflow-x: hidden;
+  }
   .imageContainer {
     position: relative;
     display: -webkit-box;
