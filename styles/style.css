@@ -745,7 +745,7 @@ html {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    left: 20vw;
+    left: 10vw;
     width: 75%;
   }
   ul.navItems {
@@ -769,8 +769,8 @@ html {
   .headerImage {
     width: 120%;
     height: 0 auto;
-    right: -5vw;
-    padding-top: 40%;
+    right: 5vw;
+    padding-top: 15%;
   }
   .titleText {
     top: 0;
