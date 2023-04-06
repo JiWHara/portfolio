@@ -108,6 +108,7 @@ form textarea,
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0.9);
+  color:black;
   padding: 0.75em 1rem;
   margin-bottom: 1.5rem;
   display:flex;
@@ -151,6 +152,9 @@ form textarea{
 .submitBtn{
     width: 10%;
     color:rgba(0, 0, 0, 0.6);
+}
+.fillIn {
+    color:black;
 }
 img {
     height: 0 auto;
